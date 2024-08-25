@@ -32,5 +32,5 @@ jobs:
     
     steps: 
       - name: win view something
-        run: dir
+        run: Write-Output "win programming"
   # dependant-job: 
