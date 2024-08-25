@@ -20,3 +20,9 @@ jobs:
           pwd
           node -v
           npm -v
+  run-parallel-commands:
+    runs-on: macos-latest
+    steps: 
+      - name: voew something
+        run: sw_version
+  # dependant-job: 
