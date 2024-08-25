@@ -20,10 +20,17 @@ jobs:
           pwd
           node -v
           npm -v
-  run-parallel-commands:
+  run-dependant-commands:
     runs-on: macos-latest
     needs: run-shell-commands
     steps: 
       - name: voew something
         run: sw_vers
+  # dependant-job: 
+  run-parallel-commands:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps: 
+      - name: win view something
+        run: time
   # dependant-job: 
