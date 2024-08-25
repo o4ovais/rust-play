@@ -29,8 +29,8 @@ jobs:
   # dependant-job: 
   run-parallel-commands:
     runs-on: windows-latest
-    needs: run-shell-commands
+    
     steps: 
       - name: win view something
-        run: time
+        run: dir
   # dependant-job: 
